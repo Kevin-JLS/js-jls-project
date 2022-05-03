@@ -1,0 +1,71 @@
+/* Variables */
+:root {
+     --primary : #f1f1f1;
+     --secondary : #333;
+     --accent : crimson;
+}
+
+/* General */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+*, ::before, ::after {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     background-color: var(--primary);
+     color: var(--secondary);
+     padding: 100px;
+     transition: all 0.5s;
+     position: relative;
+     font-size: 1.1em;
+}
+a {
+     text-decoration: none;
+     color: black;
+}
+li {
+     list-style-type: none;
+}
+
+/* Dark mode */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+.dark {
+     --primary : #333;
+     --secondary : #f1f1f1;
+     --accent : yellowgreen;
+}
+
+h1 {
+     color: var(--accent)
+}
+
+button {
+     position: absolute;
+     top: 1.5em;
+     right: 1.5em;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     font-size: 30px;
+     background: var(--accent);
+     cursor :pointer;
+     color: var(--primary);
+     border: none;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+button img {
+     pointer-events: none;
+     width: 30px;
+}
+
+p {
+     margin: 50px 0;
+}
